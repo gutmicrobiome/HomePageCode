@@ -11,7 +11,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <!--
+
             <% if (theme.avatar.enable){ %>
               <a class="brand" style="
                 <% if (!theme.avatar.border){ %> border-width: 0px; <% } %> margin-top: <%= theme.avatar.top %>px;"
@@ -23,14 +23,14 @@
                 <p><%= config.title || config.author %></p>
               </a>
             <% } %>
-            -->
+            
 
             <div class="navbar-collapse collapse">
               <ul class="hnav navbar-nav">
                 <% for (var i in theme.menu){ %>
-                  <li> <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a> </li>
+                  <li> <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a> </li>
                 <% } %>
-                  <li><%- partial('search/index') %></li>
+                  <!--<li><%- partial('search/index') %></li>-->
             </div>
           </div>
 

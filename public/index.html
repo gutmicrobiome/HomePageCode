@@ -121,6 +121,48 @@
                       };
                   </script>
                 
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img2" src="/css/images/home-bg2.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img2 = new Image();
+                      var imageTag2 = document.getElementById("carousel-img2");
+                      img2.src = imageTag2.src;
+                      img2.onload=function(){
+                        if (img2.width / img2.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag2.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag2.style.height = document.body.clientHeight + "px";
+                          imageTag2.style.marginLeft = -(document.body.clientHeight * img2.width / img2.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img3" src="/css/images/home-bg3.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img3 = new Image();
+                      var imageTag3 = document.getElementById("carousel-img3");
+                      img3.src = imageTag3.src;
+                      img3.onload=function(){
+                        if (img3.width / img3.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag3.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag3.style.height = document.body.clientHeight + "px";
+                          imageTag3.style.marginLeft = -(document.body.clientHeight * img3.width / img3.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
             </div>
 
             <!-- Controls -->
@@ -178,20 +220,17 @@
 	<!--
 
     
-      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);">
+      <div id="homelogo" class="homelogo">
     
 
         
-          <div class="homelogoback"  style="border: 1px solid #404040;" >
-            <h1><a href="#content" id="logo">Hexo</a></h1>
-            <h3></h3>
-            <!--<h5>John Doe</h5><
-            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
-          </div>
+          
+            <img id="homelogoimg" src="/css/images/homelogo.jpg" style="border-style: solid; border-color: rgba(24,24,21,0.1); border-width: 8px;">
+          
         
 	-->
 
-    
+    </div>
   
 
   <!-- 自适应主页背景大图 -->
@@ -200,14 +239,17 @@
  <!-- home_logo_image居中 -->
  
     <script>
+        var img = new Image();
         var homelogodiv = document.getElementById("homelogo");
-        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
-          homelogodiv.style.width = document.body.clientWidth + "px";
-          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
-        } else {
-          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
-          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
-        }
+        img.src = document.getElementById("homelogoimg").src;
+        img.onload=function(){
+          if (img.width > document.body.clientWidth) {
+            document.getElementById("homelogoimg").style.width = document.body.clientWidth + "px";
+            homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+          } else {
+            homelogodiv.style.marginLeft = img.width * -0.5 + "px";
+          }
+        };
     </script>
   
 
@@ -216,20 +258,21 @@
         
           <a id="beautifont" class="main-nav-link" href="/">Home</a>
         
-          <a id="beautifont" class="main-nav-link" href="/">research</a>
+          <a id="beautifont" class="main-nav-link" href="/">Research</a>
         
-          <a id="beautifont" class="main-nav-link" href="/people">people</a>
+          <a id="beautifont" class="main-nav-link" href="/people">People</a>
         
-          <a id="beautifont" class="main-nav-link" href="/">publications</a>
+          <a id="beautifont" class="main-nav-link" href="/publications">Publications</a>
         
-          <a id="beautifont" class="main-nav-link" href="/">lab-activities</a>
+          <a id="beautifont" class="main-nav-link" href="/">Lab-activities</a>
         
-          <a id="beautifont" class="main-nav-link" href="/">useful-links</a>
+          <a id="beautifont" class="main-nav-link" href="/">Useful-Links</a>
         
-          <a id="beautifont" class="main-nav-link" href="/contact">contact</a>
+          <a id="beautifont" class="main-nav-link" href="/contact">Contact</a>
         
       </p>
   </div>
+
 
 </header>
 
@@ -257,10 +300,13 @@
       </header>
     
     <div class="article-meta">
-      
+      <!--
+
 	<a href="/2019/01/28/post-home/" class="article-date">
 	  <time datetime="2019-01-28T08:34:24.000Z" itemprop="datePublished">2019-01-28</time>
 	</a>
+
+-->
 
       
       
@@ -305,15 +351,18 @@
 
   <div class="container">
       	<div class="row">
-	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2013 - 2019 Hexo All Rights Reserved.</p>
-	      
+          <!--
+          <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+
+          <p id="copyRightEn">Copyright &copy; 2019 - 2019 Hexo All Rights Reserved.</p>
+
 	      
   		   	<p id="copyRightCn">John Doe hold copyright</p>
   		   
+           -->
 		</div>
 
-		
+
   </div>
 </footer>
 
@@ -332,6 +381,7 @@
       contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
     }
 </script>
+
     </div>
     <!-- <nav id="mobile-nav">
   
@@ -341,7 +391,7 @@
   
     <a href="/people" class="mobile-nav-link">People</a>
   
-    <a href="/" class="mobile-nav-link">Publications</a>
+    <a href="/publications" class="mobile-nav-link">Publications</a>
   
     <a href="/" class="mobile-nav-link">Lab-activities</a>
   

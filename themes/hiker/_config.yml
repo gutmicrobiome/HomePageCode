@@ -7,13 +7,13 @@ menu:
   Home: /
   Research: /
   People: /people
-  Publications: /
+  Publications: /publications
   Lab-activities: /
   Useful-Links: /
   Contact: /contact
 rss: /atom.xml
 
-since: 2013
+since: 2019
 
 # Set default keywords (Use a comma to separate)
 keywords: ""
@@ -35,11 +35,11 @@ home_background_image:
   enable: true
   mode: image
   rolling: true
-  url: [css/images/home-bg0.jpg, css/images/home-bg1.jpg]
+  url: [css/images/home-bg0.jpg, css/images/home-bg1.jpg, css/images/home-bg2.jpg, css/images/home-bg3.jpg]
 
 home_logo_image:
-  enable: false
-  border: false
+  enable: true
+  border: true
   url: css/images/homelogo.jpg
 
 
