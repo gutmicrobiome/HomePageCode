@@ -30,15 +30,15 @@ Powered by Hexo v3.8.0 | Theme – hiker
 
 **Home页文档编辑**
 
-Home 页内容有多篇markdown文档构成，文档简历时间越近，排列在越前面。
+Home 页内容有多篇markdown文档构成，文档时间越近，排列在越前面。
 
 `hexo new post <title>` ，文章会存储在`source/_posts`。例如`hexo new post aaa`，新建一篇名为aaa的文章
 
-备注：Home中的makedown文档图片引用，器务必使用网络地址的格式。
+备注：Home中的makedown文档图片引用，务必使用网络地址的格式。
 
 **Research、People、Publications、 Lab-activities、Useful-Links、Contact页编辑**
 
-此类页面由一篇makedown文档构成。makedown文档的在`source/xxxx/index.md`。编辑相应的markdown文档即可修改相应的页面内容。
+此类页面由一篇markdown文档构成。markdown文档的在`source/xxxx/index.md`。编辑相应的markdown文档即可修改相应的页面内容。
 
 备注：此处makedown图片应用尽量使用网络地址的格式，也可使用相对地址。
 
