@@ -24,7 +24,7 @@ Powered by Hexo v3.8.0 | Theme – hiker
 
 在`themes/hiker/source/css/images`，下添加图片，在`themes/hiker/_config.yml`中，`home_background_image`，添加相应的图片链接。
 
-![](/Users/lheissr/Desktop/pic/1001.png)
+![](https://github.com/LHEISSR/markdownphoto/blob/master/20190211_1.png?raw=true)
 
 
 
