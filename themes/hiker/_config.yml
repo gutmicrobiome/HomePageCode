@@ -35,7 +35,7 @@ home_background_image:
   enable: true
   mode: image
   rolling: true
-  url: [css/images/home-bg0.jpg, css/images/home-bg1.jpg, css/images/home-bg2.jpg, css/images/home-bg3.jpg]
+  url: [css/images/home-bg0.jpg, css/images/home-bg1.jpg, css/images/home-bg2.jpg]
 
 home_logo_image:
   enable: true
