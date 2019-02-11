@@ -1,6 +1,5 @@
 ---
-title: contact
-date:
+title: Contact
 ---
 ### 地址：东安路131号明道楼
 
