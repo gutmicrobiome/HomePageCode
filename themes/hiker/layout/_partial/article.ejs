@@ -15,7 +15,7 @@
     <div class="article-entry" itemprop="articleBody">
       <% if (theme.post_excerpt && index){ %>
         <p class="article-excerpt-content">
-          <%- truncate(strip_html(post.content), {length: 250, omission: '...'}) %>
+          <%- truncate(strip_html(post.content), {length: 500, omission: '...'}) %>
         </p>
         <p class="article-more-link">
           <a href="<%- url_for(post.path) %>#more"><%= __('read_more') %></a>

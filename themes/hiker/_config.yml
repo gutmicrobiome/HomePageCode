@@ -5,12 +5,12 @@
 # Header Menu
 menu:
   Home: /
-  Research: /
-  People: /people
-  Publications: /publications
-  Lab-activities: /
-  Useful-Links: /
-  Contact: /contact
+  Research: /Research
+  People: /People
+  Publications: /Publications
+  Lab-activities: /Lab-activities
+  Useful-Links: /Useful-Links
+  Contact: /Contact
 rss: /atom.xml
 
 since: 2019
@@ -55,7 +55,7 @@ archive_pagination: true
 post_catalog:
   enable: true
 # 开启主页摘要
-post_excerpt: true
+post_excerpt: false
 
 
 # Content
